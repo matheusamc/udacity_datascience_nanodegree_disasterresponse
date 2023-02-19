@@ -36,10 +36,10 @@
     <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/process_data.py">process_data.py</a> - data processing file</li>
     <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/DisasterResponse.db">DisasterResponse.db</a> - database to save clean data to</li>
   </ul>
-  <li><a href= "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/models">models</a></li>
+  <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/models">models</a></li>
   <ul>
-    <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/train_classifier.py">train_classifier.py</a> - model training file</li>
-    <li>< a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/classifier.pkl">classifier.pkl</a> - saved model </li>
+    <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/train_classifier.py">train_classifier.py</a> - model training file</li>
+    <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/classifier.pkl">classifier.pkl</a> - saved model</li>
   </ul>
 </ul>
 
