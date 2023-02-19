@@ -83,9 +83,9 @@ def evaluate_model(model, X_test, Y_test, category_names):
 def save_model(model, model_filepath):
     
     #saving model in pickle
-    file = open('classifier.pkl', 'wb')
+    file = open(model_filepath, 'wb')
     
-    pickle.dump(model, model_filepath)
+    pickle.dump(model, file)
     
     file.close()
 
