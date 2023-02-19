@@ -29,12 +29,12 @@
       </ul>
       <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/app/run.py">run.py</a> - app run</li>
   </ul>
-  <li>data</li>
+  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/data">data</a></li>
   <ul>
-    <li>disaster_categories.csv - data to process</li>
-    <li>disaster_messages.csv - data to process</li>
-    <li>process_data.py - data processing file</li>
-    <li>DisasterResponse.db - database to save clean data to</li>
+    <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/disaster_categories.csv">disaster_categories.csv</a> - data to process</li>
+    <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/disaster_messages.csv">disaster_messages.csv</a> - data to process</li>
+    <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/process_data.py">process_data.py</a> - data processing file</li>
+    <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/DisasterResponse.db">DisasterResponse.db</a> - database to save clean data to</li>
   </ul>
   <li>models</li>
   <ul>
