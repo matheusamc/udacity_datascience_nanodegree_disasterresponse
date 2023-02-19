@@ -10,21 +10,42 @@
 <h3>Libraries</h3>
 <ul>
   <li>Pandas</li>
-  <li><numpy</li>
-  <li>sqlalchemy</li>
-  <li>pickle</li>
-  <li>re</li>
-  <li>nltk</li>
-  <li>sklearn</li>
+  <li>Numpy</li>
+  <li>Sqlalchemy</li>
+  <li>Pickle</li>
+  <li>Re</li>
+  <li>Nltk</li>
+  <li>Sklearn</li>
 </ul>
 
-<h3>Files</h3>
+<h3>Files Structure</h3>
 <ul>
-  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_blogpost/blob/main/blog_post_project.ipynb">blog_post_project.ipynb</a><span>: Notebook containing the data analisys and results.</span></li>
-  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_blogpost/blob/main/listings.rar">listings.rar</a><span>: Rar file containing csv file of the avaiable listings description and data.</span></li>
-  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_blogpost/blob/main/calendar.rar">calendar.rar</a><span>: Rar file containing csv file of the avaiable listings data for the year of 2023.</span></li>
-  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_blogpost/blob/main/review.rar">review.rar</a><span>: Rar file containing csv file of the reviews data.</span></li>
-  <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_blogpost/blob/main/neighbourhoods.rar">neighbourhoods.rar</a><span>: Rar file containing csv file of the neghborhoods names in Rio.</span></li>
+  <li>app</li>
+    <ul>
+      <li>template</li>
+      <ul>
+        <li>master.html</li>
+        <li>go.html</li>
+      </ul>
+      <li>run.py</li>
+  </ul>
+  <li>data</li>
+  <li>models</li>
+  - app
+| - template
+| |- master.html  # main page of web app
+| |- go.html  # classification result page of web app
+|- run.py  # Flask file that runs app
+
+- data
+|- disaster_categories.csv  # data to process 
+|- disaster_messages.csv  # data to process
+|- process_data.py
+|- InsertDatabaseName.db   # database to save clean data to
+
+- models
+|- train_classifier.py
+|- classifier.pkl  # saved model 
 </ul>
 
 <h2>Project Description</h2>
