@@ -38,13 +38,20 @@
   </ul>
   <li>models</li>
   <ul>
-    <li>rain_classifier.py - model training file</li>
+    <li>train_classifier.py - model training file</li>
     <li>classifier.pkl - saved model </li>
   </ul>
 </ul>
 
 <h2>Project Description</h2>
   <p>This project is part of the requirements of the Udacity Data Science Nanodegree. In this project we want to explorer the avaible data from Disaster Response messages and create a model to classify messages. An app is created to visualize some data and classify new messages.</p>
+
+<h3>Run instruction:</h3>
+<ul>
+  <li>Run the proccess_data.py file to treat the data from the csv files and load then in a database with the correct format.</li>
+  <li>Run the train classifier file to train the model.</li>
+  <li>Run the rn file in the app folder to load the app.</li>
+</ul>
 
 <h2>Creator</h2>
 <h3>Matheus Campos</h3>
