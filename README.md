@@ -48,8 +48,8 @@
 
 <h3>Run instruction:</h3>
 <ul>
-  <li>Run the proccess_data.py file to treat the data from the csv files and load then in a database with the correct format.</li>
-  <li>Run the train classifier file to train the model.</li>
+  <li>Run the process_data.py file to treat the data from the csv files and load then in a database with the correct format. (see the ETL notebook to have a better look at the processing done to the data and test any changes).</li>
+  <li>Run the train classifier file to train the model (see the ML notebook to look at the different models evaluated and find a better model if there is any change in the data).</li>
   <li>Run the run file in the app folder to load the app.</li>
 </ul>
 
