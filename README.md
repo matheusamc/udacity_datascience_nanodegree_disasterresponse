@@ -20,7 +20,7 @@
 
 <h3>Files Structure</h3>
 <ul>
-  <li>app</li>
+  <li><a><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/app">app</a></li>
     <ul>
       <li>template</li>
       <ul>
