@@ -24,8 +24,8 @@
     <ul>
       <li>template</li>
       <ul>
-        <li>master.html</li>
-        <li>go.html</li>
+        <li>master.html - master template</li>
+        <li>go.html - go template</li>
       </ul>
       <li>run.py - app run</li>
   </ul>
@@ -33,7 +33,7 @@
   <ul>
     <li>disaster_categories.csv - data to process</li>
     <li>disaster_messages.csv - data to process</li>
-    <li>process_data.py</li>
+    <li>process_data.py - data processing file</li>
     <li>DisasterResponse.db - database to save clean data to</li>
   </ul>
   <li>models</li>
