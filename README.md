@@ -22,12 +22,12 @@
 <ul>
   <li><a><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/app">app</a></li>
     <ul>
-      <li>template</li>
+      <li><a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/tree/main/app/templates">template</a></li>
       <ul>
-        <li>master.html - master template</li>
-        <li>go.html - go template</li>
+        <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/app/templates/master.html">master.html</a> - master template</li>
+        <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/app/templates/go.html">go.html</a> - go template</li>
       </ul>
-      <li>run.py - app run</li>
+      <li><a href = "https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/app/run.py">run.py</a> - app run</li>
   </ul>
   <li>data</li>
   <ul>
