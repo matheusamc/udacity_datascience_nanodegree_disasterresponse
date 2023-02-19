@@ -50,7 +50,7 @@
 <ul>
   <li>Run the proccess_data.py file to treat the data from the csv files and load then in a database with the correct format.</li>
   <li>Run the train classifier file to train the model.</li>
-  <li>Run the rn file in the app folder to load the app.</li>
+  <li>Run the run file in the app folder to load the app.</li>
 </ul>
 
 <h2>Creator</h2>
