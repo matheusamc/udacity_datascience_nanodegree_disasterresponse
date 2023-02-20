@@ -46,7 +46,7 @@
 <h2>Project Description</h2>
   <p>This project is part of the requirements of the Udacity Data Science Nanodegree. In this project we want to explorer the avaible data from Disaster Response messages and create a model to classify messages. An app is created to visualize some data and classify new messages.</p>
 
-<h3>Run instruction:</h3>
+<h3>Run script:</h3>
 <ul>
   <li>Run the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/data/process_data.py">process_data.py</a> file to treat the data from the csv files and load then in a database with the correct format. (see the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/ETL%20Pipeline%20Preparation.ipynb">ETL notebook</a> to have a better look at the processing done to the data and test any changes).</li>
   <li>Run the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/train_classifier.py">train classifier file</a> to train the model (see the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/ML%20Pipeline%20Preparation.ipynb">ML notebook</a> to look at the different models evaluated and find a better model if there is any change in the data).</li>
