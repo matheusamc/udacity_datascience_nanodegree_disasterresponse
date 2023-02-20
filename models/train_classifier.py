@@ -27,6 +27,13 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
 
 def load_data(database_filepath):
+    '''
+    Load data from the  sql database, format it to a DataFrame, and assign the inputs X and outpts Y for the model.
+    
+    input: path to the sql database containing a a table called "Messages".
+    
+    output: formatted inputs X and outputs Y for the model.
+    '''
     
     # load data from database
     engine = create_engine('sqlite:///{}'.format(database_filepath))
@@ -40,6 +47,13 @@ def load_data(database_filepath):
     return X,Y,Y.columns
 
 def tokenize(text):    
+    '''
+    Tokenize and lemmatize the messages.
+    
+    input: Message text.
+    
+    output: Tokenized message.    
+    '''
     
     # lowering cases and removing marks
     text = text.lower()
@@ -57,6 +71,13 @@ def tokenize(text):
 
 
 def build_model():
+    '''
+    Build a model with the best found parameters following the pipeline.
+    
+    input: None
+    
+    output: Built pipeline model.
+    '''
     
     # model pipeline
     pipeline = Pipeline([
@@ -65,10 +86,24 @@ def build_model():
         ('clf', MultiOutputClassifier(LogisticRegression(C = 1., solver = 'lbfgs')))
     ])
     
-    return pipeline
+    # Gride search model
+    parameters = {'clf__estimator__solver':['lbfgs', 'liblinear', 'newton-cg'],
+             'clf__estimator__C':[1.,.5,.25]}
+
+    cv = GridSearchCV(pipeline, param_grid=parameters)
+    
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
+    '''
+    Evalate the model creating a report it.
+    
+    input: model -> built model; X_test -> model test inputs in an array; Y_test -> model test outputs in an array; 
+    category_names -> list with the names of the categories to be classified.
+    
+    output: None. The report is printed.
+    '''
     
     # result prediction
     Y_pred = model.predict(X_test)
@@ -81,7 +116,13 @@ def evaluate_model(model, X_test, Y_test, category_names):
     return
 
 def save_model(model, model_filepath):
+    '''
+    Save the built model to a pickle file.
     
+    input: model -> built model; model_filepath -> path to where the model pickle file will be stored.
+    
+    outpt: None. The file will be saved in a pickle file.
+    '''
     #saving model in pickle
     file = open(model_filepath, 'wb')
     
@@ -103,6 +144,7 @@ def main():
         
         print('Training model...')
         model.fit(X_train, Y_train)
+        model = model.best_estimator_
         
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names)
