@@ -4,6 +4,14 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath): 
+    '''
+    Load data from csv files ans store in dataframe.
+    
+    input: messages_filepath -> path to the csv message file; categories_filepath -> path to the csv category file.
+    
+    output: df -> dataframe with processed data.
+    '''
+    
     #load data sets
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
@@ -35,6 +43,13 @@ def load_data(messages_filepath, categories_filepath):
     return df
 
 def clean_data(df):
+    '''
+    Remove duplicate data.
+    
+    input: df -> dataframe with stored messages.
+    
+    output: df -> dataframe after cleaning.
+    '''
     
     # remove duplicates
     df = df.drop_duplicates(subset=['id'], keep='first')
@@ -42,6 +57,14 @@ def clean_data(df):
     return df
 
 def save_data(df, database_filename):
+    '''
+    Save the dataframe into a sql database.
+    
+    input: df -> dataframe with the messages; database_filename -> file where the database will be saved.
+    
+    output: None. Database saved into the asigned path.
+    '''
+    
     engine = create_engine('sqlite:///{}'.format(database_filename))
     df.to_sql('Messages', engine, index=False)
     return  
