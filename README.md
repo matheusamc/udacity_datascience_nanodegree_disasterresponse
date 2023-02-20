@@ -52,6 +52,12 @@
   <li>Run the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/models/train_classifier.py">train classifier file</a> to train the model (see the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/ML%20Pipeline%20Preparation.ipynb">ML notebook</a> to look at the different models evaluated and find a better model if there is any change in the data).</li>
   <li>Run the <a href="https://github.com/matheusamc/udacity_datascience_nanodegree_disasterresponse/blob/main/app/run.py">run file</a> in the app folder to load the app.</li>
 </ul>
+<h3>How to run the instructions?</h3>
+<ul>
+  <li>To create the processed database you'll need to run the following command: python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db</li>
+  <li>To  train and save the classification model in a pickle file you'll need to run the following command: python train_classifier.py ../data/DisasterResponse.db classifier.pkl</li>
+  <li>To deploy the application locally you'll need to run the following command: python run.py</li>
+</ul>
 
 <h2>Creator</h2>
 <h3>Matheus Campos</h3>
