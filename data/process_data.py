@@ -34,6 +34,12 @@ def load_data(messages_filepath, categories_filepath):
         # set each value to be the last character of the string
         categories[column] = [ int(str(x).split("-")[1]) for x in categories[column]]
     
+    # turn values into binary
+    for column in categories:
+        for i in range(categories[column].size):
+            if categories[column][i] > 1:
+                categories[column][i] = 0
+                
     # drop categories column
     df.drop(['categories'], axis=1, inplace = True)
     
