@@ -83,7 +83,7 @@ def build_model():
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('clf', MultiOutputClassifier(LogisticRegression(C = 1., solver = 'lbfgs')))
+        ('clf', MultiOutputClassifier(LogisticRegression()))
     ])
     
     # Gride search model
